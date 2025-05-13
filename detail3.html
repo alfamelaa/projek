@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="detail.css">
+    <title>Detail Produk</title>
+</head>
+<body class="bg-gradient-to-b from-red-100 via-orange-100 to-yellow-100">
+  <nav class="bg-white shadow-md p-4 flex justify-between items-center sticky top-0 z-50">
+    <h1 class="text-2xl font-bold text-red-600">SESTARIA.CO</h1>
+    <ul class="flex space-x-6 text-gray-700">
+  <li><a href="home.html" class="hover:text-red-600 transition">Home</a></li>
+  <li><a href="product.html" class="hover:text-red-600 transition">Product</a></li>
+  <li><a href="suplier.html" class="hover:text-red-600 transition">Suplier</a></li>
+  <li><a href="about.html" class="hover:text-red-600 transition">About</a></li>
+    </ul>
+  </nav>
+    <main class="p-6">
+        <section id="detail" class="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+            <div class="image-container">
+                <img src="images/kemeja.png" alt="Detail Produk">
+            </div>
+            <div class="description">
+                <h2 class="text-3xl font-bold text-gray-800">Shirt</h2>
+                <p class="text-md text-gray-500 mb-2">Rp 200.000</p>
+                <div class="order-form">
+                    <h3 class="text-xl font-bold text-gray-700">Pesan Sekarang</h3>
+                    <input type="text" placeholder="Nama" class="input-field">
+                    <input type="number" placeholder="Jumlah" class="input-field" id="jumlah">
+                    <input type="text" placeholder="Alamat" class="input-field">
+                    <input type="tel" placeholder="No Telepon" class="input-field">
+                    <input type="email" placeholder="Email" class="input-field">
+                    <p><strong>Total: </strong><span id="total">0</span></p>
+                    <button type="button" class="btn" onclick="hitungTotal()">Buat & Cek Pesanan</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        function hitungTotal() {
+            // Function to calculate total
+            const jumlah = document.getElementById('jumlah').value;
+            const hargaPerUnit = 200000; // Example price
+            const total = jumlah * hargaPerUnit;
+            document.getElementById('total').innerText = total;
+        }
+    </script>
+</body>
+</html>

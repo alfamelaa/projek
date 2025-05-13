@@ -1,0 +1,196 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 40px;
+  border-radius: 16px;
+  max-width: 800px;
+  margin: 100px auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.container p {
+  font-size: 1.1em;
+  margin-bottom: 40px;
+  color: #000000;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.button {
+  background: #ee6b6b;
+  color: #111;
+  padding: 15px 20px;
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 1.1em;
+  transition: background 0.3s;
+  width: 100%;
+  max-width: 250px;
+  text-align: center;
+}
+
+.button:hover {
+  background: #998686;
+}
+
+/* about */
+
+.navbar {
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(45, 215, 93);
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #4a4a4a;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #3ee55f;
+}
+
+.produk-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 20px;
+}
+
+.produk-card {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+}
+
+.produk-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.produk-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-body h3 {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.card-body p {
+  color: #777;
+  margin: 0.5rem 0;
+}
+
+.card-body a {
+  font-size: 0.9rem;
+  color:rgb(45, 215, 93);
+  text-decoration: underline;
+}
+
+.detail-section {
+  background-color: white;
+  margin-top: 3rem;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.detail-grid img {
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.rating {
+  color: #facc15;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.form-pesan {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-pesan input {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.form-pesan input[readonly] {
+  background-color: #f3f4f6;
+}
+
+.form-pesan button {
+  background: linear-gradient(to right, #f43f5e, #fb923c);
+  color: white;
+  padding: 0.75rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: filter 0.3s;
+}
+
+.form-pesan button:hover {
+  filter: brightness(110%);
+}
+
+
+
